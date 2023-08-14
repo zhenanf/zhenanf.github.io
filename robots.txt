@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://zhenanf.github.io/sitemap.xml
+Sitemap: https://zhenanf.me/sitemap.xml

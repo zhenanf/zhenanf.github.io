@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: <strong>Zhenan</strong> Fan 
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
@@ -13,14 +13,22 @@ profile:
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Senior Research Scientist at Huawei Vancouver Research Center, where I'm actively involved in developing the optimization solver, [OptVerse](https://www.huaweicloud.com/product/modelarts/optverse.html){:target="\_blank"}. Prior to this, I completed my PhD at [The University of British Columbia](https://www.ubc.ca){:target="\_blank"} under the supervision of Prof. [Michael P. Friedlander](https://friedlander.io){:target="\_blank"}, focusing on large-scale structured optimization problems in machine learning, data mining and signal processing.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, my role at Huawei extends to contributing to the development of [Pangu](https://arxiv.org/abs/2303.10845){:target="\_blank"}, Huawei's cutting-edge large language model. Concurrently, I am exploring innovative ways to utilize this large language model in operational research processes. A key aspect of my work is studying the integration of OptVerse with Pangu, an initiative that offers a unique intersection of machine learning and operations research, promising new possibilities in the field.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Navigate around to know more about my work and feel free to connect for collaborations or insightful discussions. 
+
+- - -
+### Education
+<i class="fas fa-graduation-cap"></i> PhD, University of British Columbia, Computer Science (2022)
+
+<i class="fas fa-graduation-cap"></i> MS, University of British Columbia, Computer Science (2019)
+
+<i class="fas fa-graduation-cap"></i> BSc, University of Toronto, Mathematics (2017)

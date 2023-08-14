@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Zhenan
 middle_name: 
 last_name: Fan (范喆楠)
-email: zhenanf@cs.ubc.ca
+email: zhenan.fan1@huawei.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A personal website for Zhenan Fan.
 footer_text: >
@@ -69,13 +69,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: zhenanf # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: un31cHUAAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -105,7 +105,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -159,7 +159,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+    rss_url:
 
 # -----------------------------------------------------------------------------
 # Collections

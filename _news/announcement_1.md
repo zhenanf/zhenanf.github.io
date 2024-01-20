@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-09-14 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Successfully defended my [PhD Thesis](https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0421272){:target="\_blank"}!

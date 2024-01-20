@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   address: 
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
@@ -27,3 +27,5 @@ Currently, my role at Huawei extends to contributing to the development of Huawe
 <i class="fas fa-graduation-cap"></i> MS, University of British Columbia, Computer Science (2019)
 
 <i class="fas fa-graduation-cap"></i> BSc, University of Toronto, Mathematics (2017)
+
+- - -

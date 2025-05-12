@@ -3,15 +3,24 @@
 @inproceedings{fan2019bundle,
   title={Bundle methods for dual atomic pursuit},
   author={<b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander, Michael P},
-  booktitle={53rd Asilomar Conference on Signals, Systems, and Computers (ACSSC)},
+  booktitle={Asilomar Conference on Signals, Systems, and Computers (ACSSC)},
   pages={264--270},
   year={2019},
   organization={IEEE},
   arxiv={1910.13650},
   doi={https://ieeexplore.ieee.org/document/9048711},
   abbr={ACSSC},
-  abstract={The aim of structured optimization is to assemble a solution, using a given set of (possibly uncountably infinite) atoms, to fit a model to data. A two-stage algorithm based on gauge duality and bundle method is proposed. The first stage discovers the optimal atomic support for the primal problem by solving a sequence of approximations of the dual problem using a bundle-type method. The second stage recovers the approximate primal solution using the atoms discovered in the first stage. The overall approach leads to implementable and efficient algorithms for large problems.},
-  img={/assets/img/paper_imgs/BundleMethodsForDualAtomicPursuit.png}
+  abstract={The aim of structured optimization is to assemble a solution, using a given set of (possibly uncountably infinite) atoms, to fit a model to data. A two-stage algorithm based on gauge duality and bundle method is proposed. The first stage discovers the optimal atomic support for the primal problem by solving a sequence of approximations of the dual problem using a bundle-type method. The second stage recovers the approximate primal solution using the atoms discovered in the first stage. The overall approach leads to implementable and efficient algorithms for large problems.}
+}
+
+@inproceedings{fang2020fast,
+  title={Fast convergence of stochastic subgradient method under interpolation},
+  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Friedlander, Michael},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2020},
+  pdf={https://openreview.net/pdf?id=w2mYg3d0eot},
+  abbr={ICLR},
+  abstract={This paper studies the behaviour of the stochastic subgradient descent (SSGD) method applied to over-parameterized nonsmooth optimization problems that satisfy an interpolation condition. By leveraging the composite structure of the empirical risk minimization problems, we prove that when interpolation holds, SSGD converges at the same rate as the stochastic gradient descent (SGD) method applied to smooth problems. Our analysis provides a partial explanation for the empirical observation that sometimes SGD and SSGD behave similarly for training smooth and nonsmooth machine learning models. We also prove that the rates we derive are optimal for the subgradient method in the convex and interpolation setting.}
 }
 
 
@@ -25,7 +34,6 @@
   abbr={AISTATS},
   pdf={http://proceedings.mlr.press/v108/fang20a/fang20a.pdf},
   abstract={We consider greedy coordinate descent (GCD) for composite problems with sparsity inducing regularizers, including 1-norm regularization and non-negative constraints. Empirical evidence strongly suggests that GCD, when initialized with the zero vector, has an implicit screening ability that usually selects at each iteration coordinates that at are nonzero at the solution. Thus, for problems with sparse solutions, GCD can converge significantly faster than randomized coordinate descent. We present an improved convergence analysis of GCD for sparse optimization, and a formal analysis of its screening properties. We also propose and analyze an improved selection rule with stronger ability to produce sparse iterates. Numerical experiments on both synthetic and real-world data support our analysis and the effectiveness of the proposed selection rule.},
-  img={/assets/img/paper_imgs/GreedMeetsSparsity.png},
   code={https://github.com/fanghgit/Greed_Meets_Sparsity}
 }
 
@@ -38,23 +46,45 @@
   issn = {2167-3888},
   number = {4},
   pages = {280-366},
-  abbr={FnT OPT},
+  abbr={FnT-OPT},
   author = {<b>Fan</b>, <b>Zhenan</b> and Halyun Jeong and Yifan Sun and Michael P. Friedlander},
   pdf={https://friedlander.io/files/pdf/2019PolarAlignment.pdf},
-  abstract={Structured optimization uses a prescribed set of atoms to assemble a solution that fits a model to data. Polarity, which extends the familiar notion of orthogonality from linear sets to general convex sets, plays a special role in a simple and geometric form of convex duality. This duality correspondence yields a general notion of alignment that leads to an intuitive and complete description of how atoms participate in the final decomposition of the solution. The resulting geometric perspective leads to variations of existing algorithms effective for large-scale problems. We illustrate these ideas with many examples, including applications in matrix completion and morphological component analysis for the separation of mixtures of signals.},
-  img={/assets/img/paper_imgs/AtomicDecompositionViaPolarAlignment.png}
+  abstract={Structured optimization uses a prescribed set of atoms to assemble a solution that fits a model to data. Polarity, which extends the familiar notion of orthogonality from linear sets to general convex sets, plays a special role in a simple and geometric form of convex duality. This duality correspondence yields a general notion of alignment that leads to an intuitive and complete description of how atoms participate in the final decomposition of the solution. The resulting geometric perspective leads to variations of existing algorithms effective for large-scale problems. We illustrate these ideas with many examples, including applications in matrix completion and morphological component analysis for the separation of mixtures of signals.}
 }
 
-@inproceedings{fang2020fast,
-  title={Fast convergence of stochastic subgradient method under interpolation},
-  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Friedlander, Michael},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2020},
-  pdf={https://openreview.net/pdf?id=w2mYg3d0eot},
-  abbr={ICLR},
-  abstract={This paper studies the behaviour of the stochastic subgradient descent (SSGD) method applied to over-parameterized nonsmooth optimization problems that satisfy an interpolation condition. By leveraging the composite structure of the empirical risk minimization problems, we prove that when interpolation holds, SSGD converges at the same rate as the stochastic gradient descent (SGD) method applied to smooth problems. Our analysis provides a partial explanation for the empirical observation that sometimes SGD and SSGD behave similarly for training smooth and nonsmooth machine learning models. We also prove that the rates we derive are optimal for the subgradient method in the convex and interpolation setting.},
-  img={/assets/img/paper_imgs/FastConvergenceOfStochasticSubgradientMethodUnderInterpolation.png}
+@article{fan2022fairvfl,
+  title={Achieving Model Fairness in Vertical Federated Learning}, 
+  author={Liu*, Changxin and <b>Fan*</b>, <b>Zhenan</b> and Zhou, Zirui and Shi, Yang and Pei, Jian and Chu, Lingyang and Zhang, Yong},
+  journal={Technical Report},
+  abbr={TechReport},
+  arxiv={2109.08344},
+  year={2021},
+  abstract={Vertical federated learning (VFL) has attracted greater and greater interest since it enables multiple parties possessing non-overlapping features to strengthen their machine learning models without disclosing their private data and model parameters. Similar to other machine learning algorithms, VFL faces demands and challenges of fairness, i.e., the learned model may be unfairly discriminatory over some groups with sensitive attributes. To tackle this problem, we propose a fair VFL framework in this work. First, we systematically formulate the problem of training fair models in VFL, where the learning task is modelled as a constrained optimization problem. To solve it in a federated and privacy-preserving manner, we consider the equivalent dual form of the problem and develop an asynchronous gradient coordinate-descent ascent algorithm, where some active data parties perform multiple parallelized local updates per communication round to effectively reduce the number of communication rounds. The messages that the server sends to passive parties are deliberately designed such that the information necessary for local updates is released without intruding on the privacy of data and sensitive attributes. We rigorously study the convergence of the algorithm when applied to general nonconvex-concave min-max problems. We prove that the algorithm finds a δ-stationary point of the dual objective in $O(\delta^{-4})$ communication rounds under mild conditions. Finally, the extensive experiments on three benchmark datasets demonstrate the superior performance of our method in training fair models.},
+  code={https://github.com/ZhenanFanUBC/FairVFL.jl}
 }
+
+@article{fan2022dual,
+  title={A dual approach for federated learning}, 
+  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
+  journal={Technical Report},
+  abbr={TechReport},
+  arxiv={2201.11183},
+  year={2022},
+  abstract={We study the federated optimization problem from a dual perspective and propose a new algorithm termed federated dual coordinate descent (FedDCD), which is based on a type of coordinate descent method developed by Necora et al. [Journal of Optimization Theory and Applications, 2017]. Additionally, we enhance the FedDCD method with inexact gradient oracles and Nesterov's acceleration. We demonstrate theoretically that our proposed approach achieves better convergence rates than the state-of-the-art primal federated optimization algorithms under mild conditions. Numerical experiments on real-world datasets support our analysis.},
+  code={https://github.com/ZhenanFanUBC/FedDCD.jl}
+}
+
+@article{fan2021improving,
+  title={Improving Fairness for Data Valuation in Horizontal Federated Learning},
+  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Liu, Changxin and Zhang, Yong},
+  journal={International Conference on Data Engineering (ICDE)},
+  abbr={ICDE},
+  arxiv={2109.09046},
+  year={2022},
+  doi={https://ieeexplore.ieee.org/document/9835382},
+  abstract={Federated learning is an emerging decentralized machine learning scheme that allows multiple data owners to work collaboratively while ensuring data privacy. The success of federated learning depends largely on the participation of data owners. To sustain and encourage data owners' participation, it is crucial to fairly evaluate the quality of the data provided by the data owners and reward them correspondingly. Federated Shapley value, recently proposed by Wang et al. [Federated Learning, 2020], is a measure for data value under the framework of federated learning that satisfies many desired properties for data valuation. However, there are still factors of potential unfairness in the design of federated Shapley value because two data owners with the same local data may not receive the same evaluation. We propose a new measure called completed federated Shapley value to improve the fairness of federated Shapley value. The design depends on completing a matrix consisting of all the possible contributions by different subsets of the data owners. It is shown under mild conditions that this matrix is approximately low-rank by leveraging concepts and tools from optimization. Both theoretical analysis and empirical evaluation verify that the proposed measure does improve fairness in many circumstances.}
+}
+
 
 @article{fan2020polar,
   title={Polar Deconvolution of Mixed Signals},
@@ -63,68 +93,22 @@
   year={2022},
   arxiv={2010.10508},
   doi={https://ieeexplore.ieee.org/document/9783095},
-  abbr={IEEE TSP},
+  abbr={IEEE-TSP},
   abstract={The signal demixing problem seeks to separate a superposition of multiple signals into its constituent components. This paper describes a two-stage approach that first decompresses and subsequently deconvolves the noisy and undersampled observations of the superposition. Probabilistic error bounds are given on the accuracy with which this process approximates the individual signals. The theory of polar convolution of convex sets and gauge functions plays a central role in the analysis and solution process. If the measurements are random and the noise is bounded, this approach stably recovers low-complexity and mutually incoherent signals, with high probability and with optimal sample complexity. We develop an efficient algorithm, based on level-set and conditional-gradient methods, that solves the convex optimization problems with sublinear iteration complexity and linear space requirements. Numerical experiments on both real and synthetic data confirm the theory and the efficiency of the approach.},
   img={/assets/img/paper_imgs/PolarDeconvolution.png},
   code={https://github.com/MPF-Optimization-Laboratory/AtomicOpt.jl}
 }
 
-@article{fan2021safe,
-  title={Cardinality-constrained structured data-fitting problems},
-  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
-  journal={Open Journal of Mathematical Optimization},
-  year={2023},
-  arxiv={2107.11373},
-  abbr={Accepted},
-  abstract={A memory-efficient framework is described for the cardinality-constrained structured data-fitting problem. Dual-based atom-identification rules are proposed that reveal the structure of the optimal primal solution from near-optimal dual solutions. These rules allow for a simple and computationally cheap algorithm for translating any feasible dual solution to a primal solution that satisfies the cardinality constraint. Rigorous guarantees are provided for obtaining a near-optimal primal solution given any dual-based method that generates dual iterates converging to an optimal dual solution. Numerical experiments on real-world datasets support confirm the analysis and demonstrate the efficiency of the proposed approach.},
-  img={/assets/img/paper_imgs/Safe-screeningRules.png}
-}
-
-@article{fan2021improving,
-  title={Improving Fairness for Data Valuation in Horizontal Federated Learning},
-  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Liu, Changxin and Zhang, Yong},
-  journal={In International Conference on Data Engineering (ICDE)},
-  abbr={ICDE},
-  arxiv={2109.09046},
-  year={2022},
-  doi={https://ieeexplore.ieee.org/document/9835382},
-  abstract={Federated learning is an emerging decentralized machine learning scheme that allows multiple data owners to work collaboratively while ensuring data privacy. The success of federated learning depends largely on the participation of data owners. To sustain and encourage data owners’ participation, it is crucial to fairly evaluate the quality of the data provided by the data owners and reward them correspondingly. Federated Shapley value, recently proposed by Wang et al. [Federated Learning, 2020], is a measure for data value under the framework of federated learning that satisfies many desired properties for data valuation. However, there are still factors of potential unfairness in the design of federated Shapley value because two data owners with the same local data may not receive the same evaluation. We propose a new measure called completed federated Shapley value to improve the fairness of federated Shapley value. The design depends on completing a matrix consisting of all the possible contributions by different subsets of the data owners. It is shown under mild conditions that this matrix is approximately low-rank by leveraging concepts and tools from optimization. Both theoretical analysis and empirical evaluation verify that the proposed measure does improve fairness in many circumstances.},
-  img={/assets/img/paper_imgs/DataValuationFederatedLearning.png}
-}
-
-@article{fan2022dual,
-  title={A dual approach for federated learning}, 
-  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
-  journal={Submitted},
-  abbr={Submitted},
-  arxiv={2201.11183},
-  year={2022},
-  abstract={We study the federated optimization problem from a dual perspective and propose a new algorithm termed federated dual coordinate descent (FedDCD), which is based on a type of coordinate descent method developed by Necora et al. [Journal of Optimization Theory and Applications, 2017]. Additionally, we enhance the FedDCD method with inexact gradient oracles and Nesterov's acceleration. We demonstrate theoretically that our proposed approach achieves better convergence rates than the state-of-the-art primal federated optimization algorithms under mild conditions. Numerical experiments on real-world datasets support our analysis.},
-  img={/assets/img/paper_imgs/FedDCD.png},
-  code={https://github.com/ZhenanFanUBC/FedDCD.jl}
-}
-
 @article{fan2022fedmech,
   title={Knowledge-Injected Federated Learning}, 
   author={<b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Hu, Jiajie and Li, Chengliang and Zhang, Yong},
-  journal={Submitted},
-  abbr={Submitted},
+  journal={Technical Report},
+  abbr={TechReport},
   arxiv={2208.07530},
   year={2022},
   abstract={Federated learning is an emerging technique for training models from decentralized data sets. In many applications, data owners participating in the federated learning system hold not only the data but also a set of domain knowledge. Such knowledge includes human know-how and craftsmanship that can be extremely helpful to the federated learning task. In this work, we propose a federated learning framework that allows the injection of participants' domain knowledge, where the key idea is to refine the global model with knowledge locally. The scenario we consider is motivated by a real industry-level application, and we demonstrate the effectiveness of our approach to this application.},
   img={/assets/img/paper_imgs/FedKnowledge.png},
   code={https://github.com/ZhenanFanUBC/FedMech.jl}
-}
-
-@article{fan2022fairvfl,
-  title={Achieving Model Fairness in Vertical Federated Learning}, 
-  author={Liu*, Changxin and <b>Fan*</b>, <b>Zhenan</b> and Zhou, Zirui and Shi, Yang and Pei, Jian and Chu, Lingyang and Zhang, Yong},
-  journal={Submitted},
-  abbr={Submitted},
-  arxiv={2109.08344},
-  year={2022},
-  abstract={Vertical federated learning (VFL) has attracted greater and greater interest since it enables multiple parties possessing non-overlapping features to strengthen their machine learning models without disclosing their private data and model parameters. Similar to other machine learning algorithms, VFL faces demands and challenges of fairness, i.e., the learned model may be unfairly discriminatory over some groups with sensitive attributes. To tackle this problem, we propose a fair VFL framework in this work. First, we systematically formulate the problem of training fair models in VFL, where the learning task is modelled as a constrained optimization problem. To solve it in a federated and privacy-preserving manner, we consider the equivalent dual form of the problem and develop an asynchronous gradient coordinate-descent ascent algorithm, where some active data parties perform multiple parallelized local updates per communication round to effectively reduce the number of communication rounds. The messages that the server sends to passive parties are deliberately designed such that the information necessary for local updates is released without intruding on the privacy of data and sensitive attributes. We rigorously study the convergence of the algorithm when applied to general nonconvex-concave min-max problems. We prove that the algorithm finds a δ-stationary point of the dual objective in $O(\delta^{-4})$ communication rounds under mild conditions. Finally, the extensive experiments on three benchmark datasets demonstrate the superior performance of our method in training fair models.},
-  code={https://github.com/ZhenanFanUBC/FairVFL.jl}
 }
 
 @inproceedings{fan2023smart,
@@ -136,15 +120,25 @@
   abbr={ICML},
   pdf={http://proceedings.mlr.press/v202/fan23d/fan23d.pdf},
   abstract={The simplex method, introduced by Dantzig more than half a century ago, is still to date one of the most efficient methods for solving large-scale linear programming (LP) problems. While the simplex method is known to have the finite termination property under mild assumptions, the number of iterations until optimality largely depends on the choice of initial basis. Existing strategies for selecting an advanced initial basis are mostly rule-based. These rules usually require extensive expert knowledge and empirical study to develop. Yet, many of them fail to exhibit consistent improvement, even for LP problems that arise in a single application scenario. In this paper, we propose a learning-based approach for initial basis selection. We employ graph neural networks as a building block and develop a model that attempts to capture the relationship between LP problems and their optimal bases. In addition, during the inference phase, we supplement the learning-based prediction with linear algebra tricks to ensure the validity of the generated initial basis. We validate the effectiveness of our proposed strategy by extensively testing it with state-of-the-art simplex solvers, including the open-source solver HiGHS and the commercial solver OptVerse. Through these rigorous experiments, we demonstrate that our strategy achieves substantial speedup and consistently outperforms existing rule-based methods. Furthermore, we extend the proposed approach to generating restricted master problems for column generation methods and present encouraging numerical results.},
-  img={/assets/img/paper_imgs/SmartBasis.png},
   code={https://developer.huaweicloud.com/develop/aigallery/notebook/detail?id=ce45dd10-44ce-43bb-89c8-1f3277f1132d}
 }
+
+@article{fan2021safe,
+  title={Cardinality-constrained structured data-fitting problems},
+  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
+  journal={Open Journal of Mathematical Optimization},
+  year={2023},
+  abbr={OJMO},
+  pdf={https://ojmo.centre-mersenne.org/item/10.5802/ojmo.27.pdf},
+  abstract={A memory-efficient framework is described for the cardinality-constrained structured data-fitting problem. Dual-based atom-identification rules are proposed that reveal the structure of the optimal primal solution from near-optimal dual solutions. These rules allow for a simple and computationally cheap algorithm for translating any feasible dual solution to a primal solution that satisfies the cardinality constraint. Rigorous guarantees are provided for obtaining a near-optimal primal solution given any dual-based method that generates dual iterates converging to an optimal dual solution. Numerical experiments on real-world datasets support confirm the analysis and demonstrate the efficiency of the proposed approach.}
+}
+
 
 @article{fan2022fair,
   title={Fair and efficient contribution valuation for vertical federated learning},
   author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang, Yong},
   journal={International Conference on Learning Representations (ICLR)},
-  abbr={Accepted},
+  abbr={ICLR},
   arxiv={2201.02658},
   year={2024},
   abstract={Federated learning is a popular technology for training machine learning models on distributed data sources without sharing data. Vertical federated learning or feature-based federated learning applies to the cases that different data sources share the same sample ID space but differ in feature space. To ensure the data owners' long-term engagement, it is critical to objectively assess the contribution from each data source and recompense them accordingly. The Shapley value (SV) is a provably fair contribution valuation metric originated from cooperative game theory. However, computing the SV requires extensively retraining the model on each subset of data sources, which causes prohibitively high communication costs in federated learning. We propose a contribution valuation metric called vertical federated Shapley value (VerFedSV) based on SV. We show that VerFedSV not only satisfies many desirable properties for fairness but is also efficient to compute, and can be adapted to both synchronous and asynchronous vertical federated learning algorithms. Both theoretical analysis and extensive experimental results verify the fairness, efficiency, and adaptability of VerFedSV.},
@@ -158,8 +152,7 @@
   year={2024},
   arxiv={2401.03244},
   abbr={Submitted},
-  abstract={The rapid advancement of artificial intelligence (AI) techniques has opened up new opportunities to revolutionize various fields, including operations research (OR). This survey paper explores the integration of AI within the OR process (AI4OR) to enhance its effectiveness and efficiency across multiple stages, such as parameter generation, model formulation, and model optimization. By providing a comprehensive overview of the state-of-the-art and examining the potential of AI to transform OR, this paper aims to inspire further research and innovation in the development of AI-enhanced OR methods and tools. The synergy between AI and OR is poised to drive significant advancements and novel solutions in a multitude of domains, ultimately leading to more effective and efficient decision-making.},
-  img={/assets/img/paper_imgs/Safe-screeningRules.png}
+  abstract={The rapid advancement of artificial intelligence (AI) techniques has opened up new opportunities to revolutionize various fields, including operations research (OR). This survey paper explores the integration of AI within the OR process (AI4OR) to enhance its effectiveness and efficiency across multiple stages, such as parameter generation, model formulation, and model optimization. By providing a comprehensive overview of the state-of-the-art and examining the potential of AI to transform OR, this paper aims to inspire further research and innovation in the development of AI-enhanced OR methods and tools. The synergy between AI and OR is poised to drive significant advancements and novel solutions in a multitude of domains, ultimately leading to more effective and efficient decision-making.}
 }
 
 @article{fan2024ml4optverse,
@@ -171,3 +164,61 @@
   abbr={Submitted},
   abstract={In an era of digital ubiquity, efficient resource management and decision-making are paramount across numerous industries. To this end, we present a comprehensive study on the integration of machine learning (ML) techniques into Huawei Cloud's OptVerse AI Solver, which aims to mitigate the scarcity of real-world mathematical programming instances, and to surpass the capabilities of traditional optimization techniques. We showcase our methods for generating complex SAT and MILP instances utilizing generative models that mirror multifaceted structures of real-world problem. Furthermore, we introduce a training framework leveraging augmentation policies to maintain solvers' utility in dynamic environments. Besides the data generation and augmentation, our proposed approaches also include novel ML-driven policies for personalized solver strategies, with an emphasis on applications like graph convolutional networks for initial basis selection and reinforcement learning for advanced presolving and cut selection. Additionally, we detail the incorporation of state-of-the-art parameter tuning algorithms which markedly elevate solver performance. Compared with traditional solvers such as Cplex and SCIP, our ML-augmented OptVerse AI Solver demonstrates superior speed and precision across both established benchmarks and real-world scenarios, reinforcing the practical imperative and effectiveness of machine learning techniques in mathematical programming solvers.}
 }
+
+@article{pourreza2024sql,
+  title={Sql-encoder: Improving nl2sql in-context learning through a context-aware encoder},
+  author={Pourreza, Mohammadreza and Rafiei, Davood and Feng, Yuxi and Li, Raymond and <b>Fan</b>, <b>Zhenan</b> and Zhang, Weiwei},
+  journal={Submitted},
+  arxiv={2403.16204},
+  abbr={Submitted},
+  year={2024},
+  abstract={Detecting structural similarity between queries is essential for selecting examples in in-context learning models. However, assessing structural similarity based solely on the natural language expressions of queries, without considering SQL queries, presents a significant challenge. This paper explores the significance of this similarity metric and proposes a model for accurately estimating it. To achieve this, we leverage a dataset comprising 170k question pairs, meticulously curated to train a similarity prediction model. Our comprehensive evaluation demonstrates that the proposed model adeptly captures the structural similarity between questions, as evidenced by improvements in Kendall-Tau distance and precision@k metrics. Notably, our model outperforms strong competitive embedding models from OpenAI and Cohere. Furthermore, compared to these competitive models, our proposed encoder enhances the downstream performance of NL2SQL models in 1-shot in-context learning scenarios by 1-2\% for GPT-3.5-turbo, 4-8\% for CodeLlama-7B, and 2-3\% for CodeLlama-13B.}
+}
+
+@inproceedings{xing2024towards,
+  title={Towards human-aligned evaluation for linear programming word problems},
+  author={Xing, Linzi and Wang, Xinglu and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Xiong, Jing and Guo, Zhijiang and Fu, Xiaojin and Ramamonjison, Rindra and Mostajabdaveh, Mahdi and Han, Xiongwei and Zhou, Zirui and Zhang, Yong},
+  journal={Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
+  year={2024},
+  abbr={LREC-COLING},
+  pdf={https://aclanthology.org/2024.lrec-main.1438.pdf},
+  abstract={Math Word Problem (MWP) is a crucial NLP task aimed at providing solutions for given mathematical descriptions. A
+notable sub-category of MWP is the Linear Programming Word Problem (LPWP), which holds significant relevance in
+real-world decision-making and operations research. While the recent rise of generative large language models
+(LLMs) has brought more advanced solutions to LPWPs, existing evaluation methodologies for this task still diverge
+from human judgment and face challenges in recognizing mathematically equivalent answers. In this paper, we
+introduce a novel evaluation metric rooted in graph edit distance, featuring benefits such as permutation invariance
+and more accurate program equivalence identification. Human evaluations empirically validate the superior efficacy
+of our proposed metric when particularly assessing LLM-based solutions for LPWP.}
+}
+
+@inproceedings{deza2024learn2aggregate,
+  title={Learn2Aggregate: Supervised Generation of Chv$\backslash$'atal-Gomory Cuts Using Graph Neural Networks},
+  author={Deza, Arnaud and Khalil, Elias B and <b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Zhang, Yong},
+  booktitle={Annual AAAI Conference on Artificial Intelligence (AAAI)},
+  abbr={AAAI},
+  year={2024},
+  arxiv={2409.06559},
+  abstract={We present Learn2Aggregate, a machine learning (ML) framework for optimizing the generation of Chvátal-Gomory (CG) cuts in mixed integer linear programming (MILP). The framework trains a graph neural network to classify useful constraints for aggregation in CG cut generation. The ML-driven CG separator selectively focuses on a small set of impactful constraints, improving runtimes without compromising the strength of the generated cuts. Key to our approach is the formulation of a constraint classification task which favours sparse aggregation of constraints, consistent with empirical findings. This, in conjunction with a careful constraint labeling scheme and a hybrid of deep learning and feature engineering, results in enhanced CG cut generation across five diverse MILP benchmarks. On the largest test sets, our method closes roughly twice as much of the integrality gap as the standard CG method while running 40$% faster. This performance improvement is due to our method eliminating 75% of the constraints prior to aggregation.}
+}
+
+@inproceedings{li2025detriever,
+  title={DeTriever: Decoder-representation-based Retriever for Improving NL2SQL In-Context Learning},
+  author={Li, Raymond and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Carenini, Giuseppe and Zhang, Weiwei and Pourreza, Mohammadreza and Zhang, Yong},
+  journal={International Conference on Computational Linguistics (COLING)},
+  year={2025},
+  pdf={https://aclanthology.org/2025.coling-main.544.pdf},
+  abbr={COLING},
+  abstract={While in-context Learning (ICL) has proven to be an effective technique to improve the performance of Large Language Models (LLMs) in a variety of complex tasks, notably in translating natural language questions into Structured Query Language (NL2SQL), the question of how to select the most beneficial demonstration examples remains an open research problem. While prior works often adapted off-the-shelf encoders to retrieve examples dynamically, an inherent discrepancy exists in the representational capacities between the external retrievers and the LLMs. Further, optimizing the selection of examples is a non-trivial task, since there are no straightforward methods to assess the relative benefits of examples without performing pairwise inference. To address these shortcomings, we propose Detriever, a novel demonstration retrieval framework that learns a weighted combination of LLM hidden states, where rich semantic information is encoded. To train the model, we propose a proxy score that estimates the relative benefits of examples based on the similarities between output queries. Experiments on two popular NL2SQL benchmarks demonstrate that our method significantly outperforms the state-of-the-art baselines for the NL2SQL tasks.}
+}
+
+@article{singh2024efficiently,
+  title={Efficiently serving large multimedia models using EPD Disaggregation},
+  author={Singh, Gursimran and Wang, Xinglu and Hu, Ivan and Yu, Timothy and Xing, Linzi and Jiang, Wei and Wang, Zhefeng and Bai, Xiaolong and Li, Yi and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
+  journal={International Conference on Machine Learning (ICML)},
+  abbr={ICML},
+  arxiv={2501.05460},
+  year={2025},
+  abstract={Large Multimodal Models (LMMs) extend Large Language Models (LLMs) by handling diverse inputs such as images, audio, and video, but at the cost of adding a multimodal encoding stage that increases both computational and memory overhead. This step negatively impacting key Service Level Objectives (SLOs) like time to first token (TTFT) and end-to-end throughput (E2ETP). We introduce Encode-Prefill-Decode (EPD) Disaggregation, a novel framework that separates the encoding, prefill, and decode stages onto dedicated resources. Unlike current systems, which bundle encoding and prefill together, our approach decouple these steps unlocking new opportunities and optimizations. These include a new mechanism to cache multimedia tokens for efficient transfer, a novel way to parallelize encoding load within a request, a module to find the optimal resource allocation for disaggregated serving, and a novel role switching method to handle changing workload characteristics. Experimental evaluations with popular LMMs show substantial gains in memory efficiency (up to 15× less utilization), batch sizes (up to 22× larger), 10× more images/request, and 2.2× larger KV caches. Further, it leads to significant improvements in latency metrics (TTFT up to 71\% reduction) and end-to-end throughput (up to 57\% reduction), compared to systems that do not disaggregate.}
+}
+

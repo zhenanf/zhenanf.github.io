@@ -335,6 +335,94 @@
         </div>
       </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Submitted</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="shi2025expertweave" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">ExpertWeave: Efficiently Serving Expert-Specialized Fine-Tuned Adapters at Scale</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Ge Shi, Hanieh Sadri, Qian Wang, Yu Zhang, Ying Xiong, Yong Zhang, and <b>Zhenan</b> <b>Fan</b>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Submitted</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2508.17624" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Expert-Specialized Fine-Tuning (ESFT) adapts Mixture-of-Experts (MoE) large language models to enhance their task-specific performance by selectively tuning the top-activated experts for the task. Serving these fine-tuned models at scale is challenging: deploying merged models in isolation is prohibitively resource-hungry, while existing multi-adapter serving systems with LoRA-style additive updates are incompatible with ESFT’s expert-oriented paradigm. We present ExpertWeave, a system that serves multiple ESFT adapters concurrently over a single shared MoE base model, drastically reducing the memory footprint and improving resource utilization. To seamlessly integrate into existing inference pipelines for MoE models with non-intrusive modifications and minimal latency overhead, ExpertWeave introduces a virtual-memory-assisted expert weight manager that co-locates base-model and adapter experts without incurring memory overhead from fragmentation, and a fused kernel for batched rerouting to enable lightweight redirection of tokens to the appropriate experts at runtime. Our evaluations show that ExpertWeave can simultaneously serve multiple adapters of a 16B MoE model on a single accelerator where the baseline runs out of memory, or provides up to 94x more KV cache capacity and achieves up to 18% higher throughput while using comparable resources, all without compromising model accuracy. ExpertWeave maintains low overhead even when scaling to 20 adapters, with a 4-11% latency increase compared with serving the base model alone. Source code will be released soon.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Submitted</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="shi2025expertweavf" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">HyperFlexis: Joint Design of Algorithms and Systems for Multi-SLO Serving and Fast Scaling</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Zahra Yousefijamarani, Xinglu Wang, Qian Wang, Morgan Lindsay Heisler, Taha Shabani, Niloofar Gholipour, Parham Yassini, Hong Chang, Kan Chen, Qiantao Zhang, Xiaolong Bai, Jiannan Wang, Ying Xiong, Yong Zhang, and <b>Zhenan</b> <b>Fan</b>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Submitted</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2508.15919" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Modern large language model (LLM) serving systems face challenges from highly variable requests with diverse lengths, priorities, and stage-specific service-level objectives (SLOs). Meeting these requires real-time scheduling, rapid and cost-effective scaling, and support for both collocated and disaggregated Prefill/Decode (P/D) architectures. We present \textbfHyperFlexis, a unified LLM serving system that integrates algorithmic and system-level innovations to jointly optimize scheduling and scaling under multiple SLOs. It features a multi-SLO-aware scheduler that leverages budget estimation and request prioritization to ensure proactive SLO compliance for both new and ongoing requests. The system supports prefill- and decode-stage multi-SLO scheduling for P/D-disaggregated architectures and KV cache transfers. It also enables cost-effective scaling decisions, prefill-decode instance linking during scaling, and rapid P/D role transitions. To accelerate scaling and reduce cold-start latency, a device-to-device (D2D) weight transfer mechanism is proposed that lowers weight loading overhead by up to \textbf19.39. These optimizations allow the system to achieve up to \textbf4.44 higher SLO attainment, \textbf65.82% lower request latency, and cost parity with state-of-the-art baselines. The code will be released soon.</p>
+          </div>
+        </div>
+      </div>
+</li>
 </ol>
 <h2 class="bibliography">2024</h2>
 <ol class="bibliography">

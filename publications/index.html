@@ -224,7 +224,7 @@
         
         
         <div class="periodical">
-          <em></em> 2025
+          <em>International Conference on Machine Learning (ICML)</em>, 2025
         </div>
         <div class="periodical">
           
@@ -268,7 +268,7 @@
         
         
         <div class="periodical">
-          <em></em> 2025
+          <em>ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2025
         </div>
         <div class="periodical">
           
@@ -288,6 +288,48 @@
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>Huawei Cloud users leverage LoRA (Low-Rank Adaptation) as an efficient and scalable method to fine-tune and customize large language models (LLMs) for application-specific needs. However, tasks that require complex reasoning or deep contextual understanding are often hindered by biases or interference from the base model when using typical decoding methods like greedy or beam search. These biases can lead to generic or task-agnostic responses from the base model instead of leveraging the LoRA-specific adaptations. In this paper, we introduce Contrastive LoRA Decoding (CoLD), a novel decoding framework designed to maximize the use of task-specific knowledge in LoRA-adapted models, resulting in better downstream performance. CoLD uses contrastive decoding by scoring candidate tokens based on the divergence between the probability distributions of a LoRA-adapted expert model and the corresponding base model. This approach prioritizes tokens that better align with the LoRA’s learned representations, enhancing performance for specialized tasks. While effective, a naive implementation of CoLD is computationally expensive because each decoding step requires evaluating multiple token candidates across both models. To address this, we developed an optimized kernel for Huawei’s Ascend NPU. CoLD achieves up to a 5.54% increase in task accuracy while reducing end-to-end latency by 28% compared to greedy decoding. This work provides practical and efficient decoding strategies for fine-tuned LLMs in resource-constrained environments and has broad implications for applied data science in both cloud and on-premises settings.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">TechReport</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="xiao2025xdeepserve" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">xDeepServe: Model-as-a-Service on Huawei CloudMatrix384</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        XDS Team @ Huawei Cloud</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Technical Report</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The rise of scaled-out LLMs and scaled-up SuperPods signals a new era in large-scale AI infrastructure. LLMs continue to scale out via MoE, as seen in recent models like DeepSeek, Kimi, and Qwen. In parallel, AI hardware is scaling up, with Huawei’s CloudMatrix384 SuperPod offering hundreds of GB/s high-speed interconnects. Running large MoE models on SuperPod-scale hardware brings new challenges. It requires new execution models, scalable scheduling, efficient expert load balancing, and elimination of single points of failure. This paper presents xDeepServe, Huawei Cloud’s LLM serving system designed for SuperPod-scale infrastructure. At its core is Transformerless, a disaggregated architecture that decomposes transformer models into modular units–attention, feedforward, and MoE–executed independently on NPUs connected via high-speed fabric. We implement this design in two forms: disaggregated prefill-decode and disaggregated MoE-attention. This fully disaggregated setup enables independent scaling of compute and memory without sacrificing performance. To support this architecture, we propose XCCL, a communication library that leverages CloudMatrix384’s global shared memory to implement efficient point-to-point and all-to-all primitives. We also extend our serving engine FlowServe with system-level techniques, enabling scalable inference across hundreds of NPUs.</p>
           </div>
         </div>
       </div>
@@ -314,7 +356,7 @@
         
         
         <div class="periodical">
-          <em></em> 2024
+          <em>International Conference on Learning Representations (ICLR)</em>, 2024
         </div>
         <div class="periodical">
           

@@ -77,7 +77,7 @@
 @article{fan2021improving,
   title={Improving Fairness for Data Valuation in Horizontal Federated Learning},
   author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Liu, Changxin and Zhang, Yong},
-  journal={International Conference on Data Engineering (ICDE)},
+  booktitle={International Conference on Data Engineering (ICDE)},
   abbr={ICDE},
   arxiv={2109.09046},
   year={2022},
@@ -137,9 +137,9 @@
 @article{fan2022fair,
   title={Fair and efficient contribution valuation for vertical federated learning},
   author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang, Yong},
-  journal={International Conference on Learning Representations (ICLR)},
+  booktitle={International Conference on Learning Representations (ICLR)},
   abbr={ICLR},
-  arxiv={2201.02658},
+  pdf={https://proceedings.iclr.cc/paper_files/paper/2024/file/3eaca8256ac27d5e67d604e0f00401f4-Paper-Conference.pdf},
   year={2024},
   abstract={Federated learning is a popular technology for training machine learning models on distributed data sources without sharing data. Vertical federated learning or feature-based federated learning applies to the cases that different data sources share the same sample ID space but differ in feature space. To ensure the data owners' long-term engagement, it is critical to objectively assess the contribution from each data source and recompense them accordingly. The Shapley value (SV) is a provably fair contribution valuation metric originated from cooperative game theory. However, computing the SV requires extensively retraining the model on each subset of data sources, which causes prohibitively high communication costs in federated learning. We propose a contribution valuation metric called vertical federated Shapley value (VerFedSV) based on SV. We show that VerFedSV not only satisfies many desirable properties for fairness but is also efficient to compute, and can be adapted to both synchronous and asynchronous vertical federated learning algorithms. Both theoretical analysis and extensive experimental results verify the fairness, efficiency, and adaptability of VerFedSV.},
   img={/assets/img/paper_imgs/DataValuationVerticalFederatedLearning.png}
@@ -148,29 +148,29 @@
 @article{fan2024ai4or,
   title={Artificial Intelligence for Operations Research: Revolutionizing the Operations Research Process},
   author={<b>Fan</b>, <b>Zhenan</b> and Ghaddar, Bissan and Wang, Xinglu and Xing, Linzi and Zhang, Yong and Zhou, Zirui},
-  journal={Submitted},
-  year={2024},
+  journal={Accepted by European Journal of Operational Research},
+  year={2025},
   arxiv={2401.03244},
-  abbr={Submitted},
+  abbr={EJOR},
   abstract={The rapid advancement of artificial intelligence (AI) techniques has opened up new opportunities to revolutionize various fields, including operations research (OR). This survey paper explores the integration of AI within the OR process (AI4OR) to enhance its effectiveness and efficiency across multiple stages, such as parameter generation, model formulation, and model optimization. By providing a comprehensive overview of the state-of-the-art and examining the potential of AI to transform OR, this paper aims to inspire further research and innovation in the development of AI-enhanced OR methods and tools. The synergy between AI and OR is poised to drive significant advancements and novel solutions in a multitude of domains, ultimately leading to more effective and efficient decision-making.}
 }
 
 @article{fan2024ml4optverse,
   title={Machine Learning Insides OptVerse AI Solver: Design Principles and Applications},
   author={Li, Xijun and Zhu, Fangzhou and Zhen, Hui-Ling and Luo, Weilin and Lu, Meng and Huang, Yimin and <b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Kuang, Yufei and Wang, Zhihai and Geng, Zijie and Li, Yang and Liu, Haoyang and An, Zhiwu and Yang, Muming and Li, Jianshu and Wang, Jie and Yan, Junchi and Sun, Defeng and Zhong, Tao and Zhang, Yong and Zeng, Jia and Yuan, Mingxuan and Hao, Jianye and Yao, Jun and Mao, Kun},
-  journal={Submitted},
+  journal={Technical Report},
   year={2024},
   arxiv={2401.05960},
-  abbr={Submitted},
+  abbr={TechReport},
   abstract={In an era of digital ubiquity, efficient resource management and decision-making are paramount across numerous industries. To this end, we present a comprehensive study on the integration of machine learning (ML) techniques into Huawei Cloud's OptVerse AI Solver, which aims to mitigate the scarcity of real-world mathematical programming instances, and to surpass the capabilities of traditional optimization techniques. We showcase our methods for generating complex SAT and MILP instances utilizing generative models that mirror multifaceted structures of real-world problem. Furthermore, we introduce a training framework leveraging augmentation policies to maintain solvers' utility in dynamic environments. Besides the data generation and augmentation, our proposed approaches also include novel ML-driven policies for personalized solver strategies, with an emphasis on applications like graph convolutional networks for initial basis selection and reinforcement learning for advanced presolving and cut selection. Additionally, we detail the incorporation of state-of-the-art parameter tuning algorithms which markedly elevate solver performance. Compared with traditional solvers such as Cplex and SCIP, our ML-augmented OptVerse AI Solver demonstrates superior speed and precision across both established benchmarks and real-world scenarios, reinforcing the practical imperative and effectiveness of machine learning techniques in mathematical programming solvers.}
 }
 
 @article{pourreza2024sql,
   title={Sql-encoder: Improving nl2sql in-context learning through a context-aware encoder},
   author={Pourreza, Mohammadreza and Rafiei, Davood and Feng, Yuxi and Li, Raymond and <b>Fan</b>, <b>Zhenan</b> and Zhang, Weiwei},
-  journal={Submitted},
+  journal={Technical Report},
   arxiv={2403.16204},
-  abbr={Submitted},
+  abbr={TechReport},
   year={2024},
   abstract={Detecting structural similarity between queries is essential for selecting examples in in-context learning models. However, assessing structural similarity based solely on the natural language expressions of queries, without considering SQL queries, presents a significant challenge. This paper explores the significance of this similarity metric and proposes a model for accurately estimating it. To achieve this, we leverage a dataset comprising 170k question pairs, meticulously curated to train a similarity prediction model. Our comprehensive evaluation demonstrates that the proposed model adeptly captures the structural similarity between questions, as evidenced by improvements in Kendall-Tau distance and precision@k metrics. Notably, our model outperforms strong competitive embedding models from OpenAI and Cohere. Furthermore, compared to these competitive models, our proposed encoder enhances the downstream performance of NL2SQL models in 1-shot in-context learning scenarios by 1-2\% for GPT-3.5-turbo, 4-8\% for CodeLlama-7B, and 2-3\% for CodeLlama-13B.}
 }
@@ -178,9 +178,9 @@
 @inproceedings{xing2024towards,
   title={Towards human-aligned evaluation for linear programming word problems},
   author={Xing, Linzi and Wang, Xinglu and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Xiong, Jing and Guo, Zhijiang and Fu, Xiaojin and Ramamonjison, Rindra and Mostajabdaveh, Mahdi and Han, Xiongwei and Zhou, Zirui and Zhang, Yong},
-  journal={Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
+  booktitle={Conference on Computational Linguistics (COLING)},
   year={2024},
-  abbr={LREC-COLING},
+  abbr={COLING},
   pdf={https://aclanthology.org/2024.lrec-main.1438.pdf},
   abstract={Math Word Problem (MWP) is a crucial NLP task aimed at providing solutions for given mathematical descriptions. A
 notable sub-category of MWP is the Linear Programming Word Problem (LPWP), which holds significant relevance in
@@ -198,14 +198,14 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   booktitle={Annual AAAI Conference on Artificial Intelligence (AAAI)},
   abbr={AAAI},
   year={2024},
-  arxiv={2409.06559},
+  pdf={https://ojs.aaai.org/index.php/AAAI/article/view/34900},
   abstract={We present Learn2Aggregate, a machine learning (ML) framework for optimizing the generation of Chvátal-Gomory (CG) cuts in mixed integer linear programming (MILP). The framework trains a graph neural network to classify useful constraints for aggregation in CG cut generation. The ML-driven CG separator selectively focuses on a small set of impactful constraints, improving runtimes without compromising the strength of the generated cuts. Key to our approach is the formulation of a constraint classification task which favours sparse aggregation of constraints, consistent with empirical findings. This, in conjunction with a careful constraint labeling scheme and a hybrid of deep learning and feature engineering, results in enhanced CG cut generation across five diverse MILP benchmarks. On the largest test sets, our method closes roughly twice as much of the integrality gap as the standard CG method while running 40$% faster. This performance improvement is due to our method eliminating 75% of the constraints prior to aggregation.}
 }
 
 @inproceedings{li2025detriever,
   title={DeTriever: Decoder-representation-based Retriever for Improving NL2SQL In-Context Learning},
   author={Li, Raymond and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Carenini, Giuseppe and Zhang, Weiwei and Pourreza, Mohammadreza and Zhang, Yong},
-  journal={International Conference on Computational Linguistics (COLING)},
+  booktitle={International Conference on Computational Linguistics (COLING)},
   abbr={COLING},
   year={2025},
   pdf={https://aclanthology.org/2025.coling-main.544.pdf},
@@ -215,7 +215,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 @article{singh2024efficiently,
   title={Efficiently serving large multimedia models using EPD Disaggregation},
   author={Singh, Gursimran and Wang, Xinglu and Hu, Ivan and Yu, Timothy and Xing, Linzi and Jiang, Wei and Wang, Zhefeng and Bai, Xiaolong and Li, Yi and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
-  journal={International Conference on Machine Learning (ICML)},
+  booktitle={International Conference on Machine Learning (ICML)},
   abbr={ICML},
   arxiv={2501.05460},
   year={2025},
@@ -225,10 +225,11 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 @article{morgan2025lora,
   title={Enhancing Learned Knowledge in LoRA Adapters Through Efficient Contrastive Decoding on Ascend NPUs},
   author={Heisler, Morgan Lindsay and Xing, Linzi and Shi, Ge and Sadri, Hanieh and Singh, Gursimran and Zhang, Weiwei and Ye, Tao and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
-  journal={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)},
+  booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)},
   abbr={KDD},
   arxiv={2505.14620},
   year={2025},
   abstract={Huawei Cloud users leverage LoRA (Low-Rank Adaptation) as an efficient and scalable method to fine-tune and customize large language models (LLMs) for application-specific needs. However, tasks that require complex reasoning or deep contextual understanding are often hindered by biases or interference from the base model when using typical decoding methods like greedy or beam search. These biases can lead to generic or task-agnostic responses from the base model instead of leveraging the LoRA-specific adaptations. In this paper, we introduce Contrastive LoRA Decoding (CoLD), a novel decoding framework designed to maximize the use of task-specific knowledge in LoRA-adapted models, resulting in better downstream performance. CoLD uses contrastive decoding by scoring candidate tokens based on the divergence between the probability distributions of a LoRA-adapted expert model and the corresponding base model. This approach prioritizes tokens that better align with the LoRA's learned representations, enhancing performance for specialized tasks. While effective, a naive implementation of CoLD is computationally expensive because each decoding step requires evaluating multiple token candidates across both models. To address this, we developed an optimized kernel for Huawei's Ascend NPU. CoLD achieves up to a 5.54% increase in task accuracy while reducing end-to-end latency by 28% compared to greedy decoding. This work provides practical and efficient decoding strategies for fine-tuned LLMs in resource-constrained environments and has broad implications for applied data science in both cloud and on-premises settings.}
 }
+
 

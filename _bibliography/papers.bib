@@ -1,5 +1,15 @@
 ---
 ---
+@article{singh2025elasticmoe,
+  title={ElasticMoE: An Efficient Auto Scaling Method for Mixture-of-Experts Models},
+  author={Singh, Gursimran and Yu, Timothy and Li, Haley and Chen, Cheng and Sadri, Hanieh and Zhang, Qintao and Zhang, Yu and Xiong, Ying and <b>Fan</b>, <b>Zhenan</b>},
+  journal={Submitted},
+  abbr={Submitted},
+  year={2025},
+  arxiv={2510.02613},
+  abstract={Mixture-of-Experts (MoE) models promise efficient scaling of large language models (LLMs) by activating only a small subset of experts per token, but their parallelized inference pipelines make elastic serving challenging. Existing strategies fall short: horizontal scaling provisions entire replicas of the current configuration, often tens to hundreds of accelerators, leading to coarse granularity, long provisioning delays, and costly overprovisioning. Vertical scaling offers finer adjustments but typically requires instance restarts, incurring downtime. These limitations make current approaches ill-suited for the bursty, short-lived traffic patterns common in cloud deployments. We present ElasticMoE, an elastic scaling framework for MoE LLMs that achieves fine-grained, low-latency, and zero-downtime scaling. ElasticMoE decouples inference execution from memory operations, enabling scaling steps to proceed concurrently with serving. An HBM Management Module (HMM) reuses weights and KV caches via zero-copy remapping, while high-bandwidth peer-to-peer transfers bring newly added accelerators online without interrupting service. A virtual memory based expert redistribution mechanism migrates MoE experts without costly buffer reallocations, reducing peak memory usage during expert parallelism reconfiguration. Our evaluation on Ascend NPUs with three popular MoE LLMs shows that ElasticMoE achieves up to 9x lower scale-up latency, up to 2x better throughput during scaling, and significantly improves SLO attainment compared to baselines. By enabling fine-grained, concurrent scaling with minimal disruption, ElasticMoE advances the practicality of deploying massive MoE LLMs in dynamic cloud environments.}
+}
+
 @inproceedings{fan2019bundle,
   title={Bundle methods for dual atomic pursuit},
   author={<b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander, Michael P},
@@ -129,6 +139,7 @@
   journal={Open Journal of Mathematical Optimization},
   year={2023},
   abbr={OJMO},
+  doi={https://ojmo.centre-mersenne.org/articles/10.5802/ojmo.27/},
   pdf={https://ojmo.centre-mersenne.org/item/10.5802/ojmo.27.pdf},
   abstract={A memory-efficient framework is described for the cardinality-constrained structured data-fitting problem. Dual-based atom-identification rules are proposed that reveal the structure of the optimal primal solution from near-optimal dual solutions. These rules allow for a simple and computationally cheap algorithm for translating any feasible dual solution to a primal solution that satisfies the cardinality constraint. Rigorous guarantees are provided for obtaining a near-optimal primal solution given any dual-based method that generates dual iterates converging to an optimal dual solution. Numerical experiments on real-world datasets support confirm the analysis and demonstrate the efficiency of the proposed approach.}
 }
@@ -136,7 +147,7 @@
 
 @inproceedings{fan2022fair,
   title={Fair and efficient contribution valuation for vertical federated learning},
-  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang, Yong},
+  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Wang, Xinglu and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang, Yong},
   booktitle={International Conference on Learning Representations (ICLR)},
   abbr={ICLR},
   pdf={https://proceedings.iclr.cc/paper_files/paper/2024/file/3eaca8256ac27d5e67d604e0f00401f4-Paper-Conference.pdf},
@@ -151,6 +162,7 @@
   journal={European Journal of Operational Research},
   year={2025},
   arxiv={2401.03244},
+  doi={https://www.sciencedirect.com/science/article/abs/pii/S0377221725006666},
   abbr={EJOR},
   abstract={The rapid advancement of artificial intelligence (AI) techniques has opened up new opportunities to revolutionize various fields, including operations research (OR). This survey paper explores the integration of AI within the OR process (AI4OR) to enhance its effectiveness and efficiency across multiple stages, such as parameter generation, model formulation, and model optimization. By providing a comprehensive overview of the state-of-the-art and examining the potential of AI to transform OR, this paper aims to inspire further research and innovation in the development of AI-enhanced OR methods and tools. The synergy between AI and OR is poised to drive significant advancements and novel solutions in a multitude of domains, ultimately leading to more effective and efficient decision-making.}
 }
@@ -181,6 +193,7 @@
   booktitle={Conference on Computational Linguistics (COLING)},
   year={2024},
   abbr={COLING},
+  doi={https://aclanthology.org/2024.lrec-main.1438/},
   pdf={https://aclanthology.org/2024.lrec-main.1438.pdf},
   abstract={Math Word Problem (MWP) is a crucial NLP task aimed at providing solutions for given mathematical descriptions. A
 notable sub-category of MWP is the Linear Programming Word Problem (LPWP), which holds significant relevance in
@@ -198,6 +211,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   booktitle={Annual AAAI Conference on Artificial Intelligence (AAAI)},
   abbr={AAAI},
   year={2024},
+  doi={https://ojs.aaai.org/index.php/AAAI/article/view/34900},
   pdf={https://ojs.aaai.org/index.php/AAAI/article/view/34900},
   abstract={We present Learn2Aggregate, a machine learning (ML) framework for optimizing the generation of Chvátal-Gomory (CG) cuts in mixed integer linear programming (MILP). The framework trains a graph neural network to classify useful constraints for aggregation in CG cut generation. The ML-driven CG separator selectively focuses on a small set of impactful constraints, improving runtimes without compromising the strength of the generated cuts. Key to our approach is the formulation of a constraint classification task which favours sparse aggregation of constraints, consistent with empirical findings. This, in conjunction with a careful constraint labeling scheme and a hybrid of deep learning and feature engineering, results in enhanced CG cut generation across five diverse MILP benchmarks. On the largest test sets, our method closes roughly twice as much of the integrality gap as the standard CG method while running 40$% faster. This performance improvement is due to our method eliminating 75% of the constraints prior to aggregation.}
 }
@@ -208,6 +222,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   booktitle={International Conference on Computational Linguistics (COLING)},
   abbr={COLING},
   year={2025},
+  doi={https://aclanthology.org/2025.coling-main.544/},
   pdf={https://aclanthology.org/2025.coling-main.544.pdf},
   abstract={While in-context Learning (ICL) has proven to be an effective technique to improve the performance of Large Language Models (LLMs) in a variety of complex tasks, notably in translating natural language questions into Structured Query Language (NL2SQL), the question of how to select the most beneficial demonstration examples remains an open research problem. While prior works often adapted off-the-shelf encoders to retrieve examples dynamically, an inherent discrepancy exists in the representational capacities between the external retrievers and the LLMs. Further, optimizing the selection of examples is a non-trivial task, since there are no straightforward methods to assess the relative benefits of examples without performing pairwise inference. To address these shortcomings, we propose Detriever, a novel demonstration retrieval framework that learns a weighted combination of LLM hidden states, where rich semantic information is encoded. To train the model, we propose a proxy score that estimates the relative benefits of examples based on the similarities between output queries. Experiments on two popular NL2SQL benchmarks demonstrate that our method significantly outperforms the state-of-the-art baselines for the NL2SQL tasks.}
 }
@@ -227,6 +242,8 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   author={Heisler, Morgan Lindsay and Xing, Linzi and Shi, Ge and Sadri, Hanieh and Singh, Gursimran and Zhang, Weiwei and Ye, Tao and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
   booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)},
   abbr={KDD},
+  pdf={https://dl.acm.org/doi/pdf/10.1145/3711896.3737215},
+  doi={https://dl.acm.org/doi/10.1145/3711896.3737215},
   arxiv={2505.14620},
   year={2025},
   abstract={Huawei Cloud users leverage LoRA (Low-Rank Adaptation) as an efficient and scalable method to fine-tune and customize large language models (LLMs) for application-specific needs. However, tasks that require complex reasoning or deep contextual understanding are often hindered by biases or interference from the base model when using typical decoding methods like greedy or beam search. These biases can lead to generic or task-agnostic responses from the base model instead of leveraging the LoRA-specific adaptations. In this paper, we introduce Contrastive LoRA Decoding (CoLD), a novel decoding framework designed to maximize the use of task-specific knowledge in LoRA-adapted models, resulting in better downstream performance. CoLD uses contrastive decoding by scoring candidate tokens based on the divergence between the probability distributions of a LoRA-adapted expert model and the corresponding base model. This approach prioritizes tokens that better align with the LoRA's learned representations, enhancing performance for specialized tasks. While effective, a naive implementation of CoLD is computationally expensive because each decoding step requires evaluating multiple token candidates across both models. To address this, we developed an optimized kernel for Huawei's Ascend NPU. CoLD achieves up to a 5.54% increase in task accuracy while reducing end-to-end latency by 28% compared to greedy decoding. This work provides practical and efficient decoding strategies for fine-tuned LLMs in resource-constrained environments and has broad implications for applied data science in both cloud and on-premises settings.}
@@ -252,7 +269,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   abstract={Expert-Specialized Fine-Tuning (ESFT) adapts Mixture-of-Experts (MoE) large language models to enhance their task-specific performance by selectively tuning the top-activated experts for the task. Serving these fine-tuned models at scale is challenging: deploying merged models in isolation is prohibitively resource-hungry, while existing multi-adapter serving systems with LoRA-style additive updates are incompatible with ESFT's expert-oriented paradigm. We present ExpertWeave, a system that serves multiple ESFT adapters concurrently over a single shared MoE base model, drastically reducing the memory footprint and improving resource utilization. To seamlessly integrate into existing inference pipelines for MoE models with non-intrusive modifications and minimal latency overhead, ExpertWeave introduces a virtual-memory-assisted expert weight manager that co-locates base-model and adapter experts without incurring memory overhead from fragmentation, and a fused kernel for batched rerouting to enable lightweight redirection of tokens to the appropriate experts at runtime. Our evaluations show that ExpertWeave can simultaneously serve multiple adapters of a 16B MoE model on a single accelerator where the baseline runs out of memory, or provides up to 94x more KV cache capacity and achieves up to 18% higher throughput while using comparable resources, all without compromising model accuracy. ExpertWeave maintains low overhead even when scaling to 20 adapters, with a 4-11% latency increase compared with serving the base model alone. Source code will be released soon.}
 }
 
-@article{shi2025expertweave,
+@article{zahra2025hyperflexis,
   title={HyperFlexis: Joint Design of Algorithms and Systems for Multi-SLO Serving and Fast Scaling},
   author={Yousefijamarani, Zahra and Wang, Xinglu and Wang, Qian and Heisler, Morgan Lindsay and Shabani, Taha and Gholipour, Niloofar and Yassini, Parham and Chang, Hong and Chen, Kan and Zhang, Qiantao and Bai, Xiaolong and Wang, Jiannan and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
   journal={Submitted},

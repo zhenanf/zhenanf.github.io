@@ -1,18 +1,8 @@
 ---
 ---
-@article{singh2025elasticmoe,
-  title={ElasticMoE: An Efficient Auto Scaling Method for Mixture-of-Experts Models},
-  author={Singh, Gursimran and Yu, Timothy and Li, Haley and Chen, Cheng and Sadri, Hanieh and Zhang, Qintao and Zhang, Yu and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
-  journal={Submitted},
-  abbr={Submitted},
-  year={2025},
-  arxiv={2510.02613},
-  abstract={Mixture-of-Experts (MoE) models promise efficient scaling of large language models (LLMs) by activating only a small subset of experts per token, but their parallelized inference pipelines make elastic serving challenging. Existing strategies fall short: horizontal scaling provisions entire replicas of the current configuration, often tens to hundreds of accelerators, leading to coarse granularity, long provisioning delays, and costly overprovisioning. Vertical scaling offers finer adjustments but typically requires instance restarts, incurring downtime. These limitations make current approaches ill-suited for the bursty, short-lived traffic patterns common in cloud deployments. We present ElasticMoE, an elastic scaling framework for MoE LLMs that achieves fine-grained, low-latency, and zero-downtime scaling. ElasticMoE decouples inference execution from memory operations, enabling scaling steps to proceed concurrently with serving. An HBM Management Module (HMM) reuses weights and KV caches via zero-copy remapping, while high-bandwidth peer-to-peer transfers bring newly added accelerators online without interrupting service. A virtual memory based expert redistribution mechanism migrates MoE experts without costly buffer reallocations, reducing peak memory usage during expert parallelism reconfiguration. Our evaluation on Ascend NPUs with three popular MoE LLMs shows that ElasticMoE achieves up to 9x lower scale-up latency, up to 2x better throughput during scaling, and significantly improves SLO attainment compared to baselines. By enabling fine-grained, concurrent scaling with minimal disruption, ElasticMoE advances the practicality of deploying massive MoE LLMs in dynamic cloud environments.}
-}
-
 @inproceedings{fan2019bundle,
   title={Bundle methods for dual atomic pursuit},
-  author={<b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander, Michael P},
+  author={<b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander†, Michael P},
   booktitle={Asilomar Conference on Signals, Systems, and Computers (ACSSC)},
   pages={264--270},
   year={2019},
@@ -25,7 +15,7 @@
 
 @inproceedings{fang2020fast,
   title={Fast convergence of stochastic subgradient method under interpolation},
-  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Friedlander, Michael},
+  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Friedlander†, Michael},
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2020},
   pdf={https://openreview.net/pdf?id=w2mYg3d0eot},
@@ -36,7 +26,7 @@
 
 @inproceedings{fang2020greed,
   title={Greed Meets Sparsity: Understanding and Improving Greedy Coordinate Descent for Sparse Optimization},
-  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander, Michael},
+  author={Fang, Huang and <b>Fan</b>, <b>Zhenan</b> and Sun, Yifan and Friedlander†, Michael},
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
   pages={434--444},
   year={2020},
@@ -57,14 +47,14 @@
   number = {4},
   pages = {280-366},
   abbr={FnT-OPT},
-  author = {<b>Fan</b>, <b>Zhenan</b> and Halyun Jeong and Yifan Sun and Michael P. Friedlander},
+  author = {<b>Fan</b>, <b>Zhenan</b> and Halyun Jeong and Yifan Sun and Michael P. Friedlander†},
   pdf={https://friedlander.io/files/pdf/2019PolarAlignment.pdf},
   abstract={Structured optimization uses a prescribed set of atoms to assemble a solution that fits a model to data. Polarity, which extends the familiar notion of orthogonality from linear sets to general convex sets, plays a special role in a simple and geometric form of convex duality. This duality correspondence yields a general notion of alignment that leads to an intuitive and complete description of how atoms participate in the final decomposition of the solution. The resulting geometric perspective leads to variations of existing algorithms effective for large-scale problems. We illustrate these ideas with many examples, including applications in matrix completion and morphological component analysis for the separation of mixtures of signals.}
 }
 
 @article{fan2022fairvfl,
   title={Achieving Model Fairness in Vertical Federated Learning}, 
-  author={Liu*, Changxin and <b>Fan*</b>, <b>Zhenan</b> and Zhou, Zirui and Shi, Yang and Pei, Jian and Chu, Lingyang and Zhang, Yong},
+  author={Liu*, Changxin and <b>Fan*</b>, <b>Zhenan</b> and Zhou, Zirui and Shi, Yang and Pei, Jian and Chu, Lingyang and Zhang†, Yong},
   journal={Technical Report},
   abbr={TechReport},
   arxiv={2109.08344},
@@ -75,7 +65,7 @@
 
 @article{fan2022dual,
   title={A dual approach for federated learning}, 
-  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
+  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander†, Michael P},
   journal={Technical Report},
   abbr={TechReport},
   arxiv={2201.11183},
@@ -86,7 +76,7 @@
 
 @article{fan2021improving,
   title={Improving Fairness for Data Valuation in Horizontal Federated Learning},
-  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Liu, Changxin and Zhang, Yong},
+  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Liu, Changxin and Zhang†, Yong},
   booktitle={International Conference on Data Engineering (ICDE)},
   abbr={ICDE},
   arxiv={2109.09046},
@@ -98,7 +88,7 @@
 
 @article{fan2020polar,
   title={Polar Deconvolution of Mixed Signals},
-  author={<b>Fan</b>, <b>Zhenan</b> and Jeong, Halyun and Joshi, Babhru and Friedlander, Michael P},
+  author={<b>Fan</b>, <b>Zhenan</b> and Jeong, Halyun and Joshi, Babhru and Friedlander†, Michael P},
   journal={IEEE Transactions on Signal Processing},
   year={2022},
   arxiv={2010.10508},
@@ -111,7 +101,7 @@
 
 @article{fan2022fedmech,
   title={Knowledge-Injected Federated Learning}, 
-  author={<b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Hu, Jiajie and Li, Chengliang and Zhang, Yong},
+  author={<b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Hu, Jiajie and Li, Chengliang and Zhang†, Yong},
   journal={Technical Report},
   abbr={TechReport},
   arxiv={2208.07530},
@@ -123,7 +113,7 @@
 
 @inproceedings{fan2023smart,
   title={Smart Initial Basis Selection for Linear Programs},
-  author={<b>Fan*</b>, <b>Zhenan</b> and Wang*, Xinglu and Yakovenko*, Oleksandr and Sivas, Abdullah Ali and Ren, Owen and Zhang, Yong and Zhou, Zirui},
+  author={<b>Fan*</b>, <b>Zhenan</b> and Wang*, Xinglu and Yakovenko*, Oleksandr and Sivas, Abdullah Ali and Ren, Owen and Zhang, Yong and Zhou†, Zirui},
   booktitle={International Conference on Machine Learning (ICML)},
   year={2023},
   organization={PMLR},
@@ -135,7 +125,7 @@
 
 @article{fan2021safe,
   title={Cardinality-constrained structured data-fitting problems},
-  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander, Michael P},
+  author={<b>Fan*</b>, <b>Zhenan</b> and Fang*, Huang and Friedlander†, Michael P},
   journal={Open Journal of Mathematical Optimization},
   year={2023},
   abbr={OJMO},
@@ -147,7 +137,7 @@
 
 @inproceedings{fan2022fair,
   title={Fair and efficient contribution valuation for vertical federated learning},
-  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Wang, Xinglu and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang, Yong},
+  author={<b>Fan</b>, <b>Zhenan</b> and Fang, Huang and Wang, Xinglu and Zhou, Zirui and Pei, Jian and Friedlander, Michael P and Zhang†, Yong},
   booktitle={International Conference on Learning Representations (ICLR)},
   abbr={ICLR},
   pdf={https://proceedings.iclr.cc/paper_files/paper/2024/file/3eaca8256ac27d5e67d604e0f00401f4-Paper-Conference.pdf},
@@ -158,7 +148,7 @@
 
 @article{fan2024ai4or,
   title={Artificial intelligence for optimization: Unleashing the potential of parameter generation, model formulation, and solution methods},
-  author={<b>Fan</b>, <b>Zhenan</b> and Ghaddar, Bissan and Wang, Xinglu and Xing, Linzi and Zhang, Yong and Zhou, Zirui},
+  author={<b>Fan</b>, <b>Zhenan</b> and Ghaddar†, Bissan and Wang, Xinglu and Xing, Linzi and Zhang, Yong and Zhou, Zirui},
   journal={European Journal of Operational Research},
   year={2025},
   arxiv={2401.03244},
@@ -179,7 +169,7 @@
 
 @article{pourreza2024sql,
   title={Sql-encoder: Improving nl2sql in-context learning through a context-aware encoder},
-  author={Pourreza, Mohammadreza and Rafiei, Davood and Feng, Yuxi and Li, Raymond and <b>Fan</b>, <b>Zhenan</b> and Zhang, Weiwei},
+  author={Pourreza, Mohammadreza and Rafiei, Davood and Feng, Yuxi and Li, Raymond and <b>Fan</b>, <b>Zhenan</b> and Zhang†, Weiwei},
   journal={Technical Report},
   arxiv={2403.16204},
   abbr={TechReport},
@@ -189,7 +179,7 @@
 
 @inproceedings{xing2024towards,
   title={Towards human-aligned evaluation for linear programming word problems},
-  author={Xing, Linzi and Wang, Xinglu and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Xiong, Jing and Guo, Zhijiang and Fu, Xiaojin and Ramamonjison, Rindra and Mostajabdaveh, Mahdi and Han, Xiongwei and Zhou, Zirui and Zhang, Yong},
+  author={Xing, Linzi and Wang, Xinglu and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Xiong, Jing and Guo, Zhijiang and Fu, Xiaojin and Ramamonjison, Rindra and Mostajabdaveh, Mahdi and Han, Xiongwei and Zhou, Zirui and Zhang†, Yong},
   booktitle={Conference on Computational Linguistics (COLING)},
   year={2024},
   abbr={COLING},
@@ -207,7 +197,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @inproceedings{deza2024learn2aggregate,
   title={Learn2Aggregate: Supervised Generation of Chvátal-Gomory Cuts Using Graph Neural Networks},
-  author={Deza, Arnaud and Khalil, Elias B and <b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Zhang, Yong},
+  author={Deza, Arnaud and Khalil, Elias B and <b>Fan</b>, <b>Zhenan</b> and Zhou, Zirui and Zhang†, Yong},
   booktitle={Annual AAAI Conference on Artificial Intelligence (AAAI)},
   abbr={AAAI},
   year={2024},
@@ -218,7 +208,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @inproceedings{li2025detriever,
   title={DeTriever: Decoder-representation-based Retriever for Improving NL2SQL In-Context Learning},
-  author={Li, Raymond and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Carenini, Giuseppe and Zhang, Weiwei and Pourreza, Mohammadreza and Zhang, Yong},
+  author={Li, Raymond and Feng, Yuxi and <b>Fan</b>, <b>Zhenan</b> and Carenini, Giuseppe and Zhang, Weiwei and Pourreza, Mohammadreza and Zhang†, Yong},
   booktitle={International Conference on Computational Linguistics (COLING)},
   abbr={COLING},
   year={2025},
@@ -229,7 +219,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @inproceedings{singh2024efficiently,
   title={Efficiently serving large multimedia models using EPD Disaggregation},
-  author={Singh, Gursimran and Wang, Xinglu and Hu, Ivan and Yu, Timothy and Xing, Linzi and Jiang, Wei and Wang, Zhefeng and Bai, Xiaolong and Li, Yi and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
+  author={Singh, Gursimran and Wang, Xinglu and Hu, Ivan and Yu, Timothy and Xing, Linzi and Jiang, Wei and Wang, Zhefeng and Bai, Xiaolong and Li, Yi and Xiong, Ying and Zhang†, Yong and <b>Fan†</b>, <b>Zhenan</b>},
   booktitle={International Conference on Machine Learning (ICML)},
   abbr={ICML},
   arxiv={2501.05460},
@@ -239,7 +229,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @inproceedings{morgan2025lora,
   title={Enhancing Learned Knowledge in LoRA Adapters Through Efficient Contrastive Decoding on Ascend NPUs},
-  author={Heisler, Morgan Lindsay and Xing, Linzi and Shi, Ge and Sadri, Hanieh and Singh, Gursimran and Zhang, Weiwei and Ye, Tao and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
+  author={Heisler, Morgan Lindsay and Xing, Linzi and Shi, Ge and Sadri, Hanieh and Singh, Gursimran and Zhang, Weiwei and Ye, Tao and Xiong, Ying and Zhang, Yong and <b>Fan†</b>, <b>Zhenan</b>},
   booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)},
   abbr={KDD},
   pdf={https://dl.acm.org/doi/pdf/10.1145/3711896.3737215},
@@ -261,7 +251,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @article{shi2025expertweave,
   title={ExpertWeave: Efficiently Serving Expert-Specialized Fine-Tuned Adapters at Scale},
-  author={Shi, Ge and Sadri, Hanieh and Wang, Qian and Zhang, Yu and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
+  author={Shi, Ge and Sadri, Hanieh and Wang, Qian and Zhang, Yu and Xiong, Ying and Zhang†, Yong and <b>Fan†</b>, <b>Zhenan</b>},
   journal={Submitted},
   abbr={Submitted},
   year={2025},
@@ -271,7 +261,7 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
 
 @article{zahra2025hyperflexis,
   title={HyperFlexis: Joint Design of Algorithms and Systems for Multi-SLO Serving and Fast Scaling},
-  author={Yousefijamarani, Zahra and Wang, Xinglu and Wang, Qian and Heisler, Morgan Lindsay and Shabani, Taha and Gholipour, Niloofar and Yassini, Parham and Chang, Hong and Chen, Kan and Zhang, Qiantao and Bai, Xiaolong and Wang, Jiannan and Xiong, Ying and Zhang, Yong and <b>Fan</b>, <b>Zhenan</b>},
+  author={Yousefijamarani, Zahra and Wang, Xinglu and Wang, Qian and Heisler, Morgan Lindsay and Shabani, Taha and Gholipour, Niloofar and Yassini, Parham and Chang, Hong and Chen, Kan and Zhang, Qiantao and Bai, Xiaolong and Wang, Jiannan and Xiong, Ying and Zhang†, Yong and <b>Fan†</b>, <b>Zhenan</b>},
   journal={Submitted},
   abbr={Submitted},
   year={2025},
@@ -279,3 +269,12 @@ of our proposed metric when particularly assessing LLM-based solutions for LPWP.
   abstract={Modern large language model (LLM) serving systems face challenges from highly variable requests with diverse lengths, priorities, and stage-specific service-level objectives (SLOs). Meeting these requires real-time scheduling, rapid and cost-effective scaling, and support for both collocated and disaggregated Prefill/Decode (P/D) architectures. We present \textbf{HyperFlexis}, a unified LLM serving system that integrates algorithmic and system-level innovations to jointly optimize scheduling and scaling under multiple SLOs. It features a multi-SLO-aware scheduler that leverages budget estimation and request prioritization to ensure proactive SLO compliance for both new and ongoing requests. The system supports prefill- and decode-stage multi-SLO scheduling for P/D-disaggregated architectures and KV cache transfers. It also enables cost-effective scaling decisions, prefill-decode instance linking during scaling, and rapid P/D role transitions. To accelerate scaling and reduce cold-start latency, a device-to-device (D2D) weight transfer mechanism is proposed that lowers weight loading overhead by up to \textbf{19.39}. These optimizations allow the system to achieve up to \textbf{4.44} higher SLO attainment, \textbf{65.82\%} lower request latency, and cost parity with state-of-the-art baselines. The code will be released soon.}
 }
 
+@article{singh2025elasticmoe,
+  title={ElasticMoE: An Efficient Auto Scaling Method for Mixture-of-Experts Models},
+  author={Singh, Gursimran and Yu, Timothy and Li, Haley and Chen, Cheng and Sadri, Hanieh and Zhang, Qintao and Zhang, Yu and Xiong, Ying and Zhang†, Yong and <b>Fan†</b>, <b>Zhenan</b>},
+  journal={Submitted},
+  abbr={Submitted},
+  year={2025},
+  arxiv={2510.02613},
+  abstract={Mixture-of-Experts (MoE) models promise efficient scaling of large language models (LLMs) by activating only a small subset of experts per token, but their parallelized inference pipelines make elastic serving challenging. Existing strategies fall short: horizontal scaling provisions entire replicas of the current configuration, often tens to hundreds of accelerators, leading to coarse granularity, long provisioning delays, and costly overprovisioning. Vertical scaling offers finer adjustments but typically requires instance restarts, incurring downtime. These limitations make current approaches ill-suited for the bursty, short-lived traffic patterns common in cloud deployments. We present ElasticMoE, an elastic scaling framework for MoE LLMs that achieves fine-grained, low-latency, and zero-downtime scaling. ElasticMoE decouples inference execution from memory operations, enabling scaling steps to proceed concurrently with serving. An HBM Management Module (HMM) reuses weights and KV caches via zero-copy remapping, while high-bandwidth peer-to-peer transfers bring newly added accelerators online without interrupting service. A virtual memory based expert redistribution mechanism migrates MoE experts without costly buffer reallocations, reducing peak memory usage during expert parallelism reconfiguration. Our evaluation on Ascend NPUs with three popular MoE LLMs shows that ElasticMoE achieves up to 9x lower scale-up latency, up to 2x better throughput during scaling, and significantly improves SLO attainment compared to baselines. By enabling fine-grained, concurrent scaling with minimal disruption, ElasticMoE advances the practicality of deploying massive MoE LLMs in dynamic cloud environments.}
+}

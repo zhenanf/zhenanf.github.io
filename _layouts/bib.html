@@ -63,7 +63,11 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            <em>{{author.first}} {{author.last}}</em>
+            {%- if forloop.last and author_array_limit == author_array_size -%}
+              <em>{{author.first}} {{author.last}}†</em>
+            {%- else -%}
+              <em>{{author.first}} {{author.last}}</em>
+            {%- endif -%}
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
